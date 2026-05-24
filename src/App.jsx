@@ -199,7 +199,7 @@ Return ONLY a raw valid JSON object. No markdown, no backticks, no preamble. Jus
         script: "", video_prompt: "", audio_prompt: "", title: "", description: "", hashtags: "", tags: "",
       });
       if (!result.success) setErrors(prev => ({ ...prev, [i]: result.error }));
-      if (i < 2) await sleep(600);
+      if (i < 2) await sleep(15000);
     }
     setVideos(results); setActiveTab(0); setLoadingIndex(-1); setLoading(false);
   };
